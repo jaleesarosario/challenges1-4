@@ -46,6 +46,7 @@
     function Before(thumb){
         console.log(thumb.alt)
         var photoChange = thumb.getAttribute("src");
+        var tabin = thumb.getAttribute("tabindex");
         document.querySelector('#image').innerHTML = (thumb.alt)
         document.querySelector("#image").style.backgroundImage = "url("+photoChange+")";
         }
@@ -72,25 +73,41 @@
         </div>
 
         <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-        <img class = "preview"
-            alt = "Styling with a Bandana"
-            src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+        <img class = "preview" tabindex = "0"
+            alt = "Baby Jaleesa bath time"
+            src = "images/baby_me_bath.jpg"
             onmouseover = "Before(this)"
             onmouseleave = "After()">
-
-
-        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-        <img class = "preview"
-            alt = "With My Boy"
-            src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
-            onmouseover = "Before(this)"
-            onmouseleave = "After()">
-
 
         <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
         <img class = "preview" tabindex = "1"
-            src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
-            alt = "Young Puppy"
+            alt = "Baby Jaleesa at home in Iceland"
+            src = "images/baby_me_hallway.jpg"
+            onmouseover = "Before(this)"
+            onmouseleave = "After()">
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "2"
+            src = "images/baby_me_kitchen.jpg"
+            alt = "Baby Jaleesa in Kitchen"
+            onmouseover = "Before(this)"
+            onmouseleave = "After()">
+
+        <img class = "preview" tabindex = "3"
+            src = "images/oldersis_and_I_in_JP.jpg"
+            alt = "Young Jaleesa and sister in Japan"
+            onmouseover = "Before(this)"
+            onmouseleave = "After()">
+
+        <img class = "preview" tabindex = "4"
+            src = "images/mom_and_i.jpg"
+            alt = "Mom and Jaleesa before prom"
+            onmouseover = "Before(this)"
+            onmouseleave = "After()">
+
+        <img class = "preview" tabindex = "5"
+            src = "images/me_and_sonia.jpg"
+            alt = "Jaleesa and Sonia = BFF"
             onmouseover = "Before(this)"
             onmouseleave = "After()">
 </body>
