@@ -46,23 +46,16 @@
     function Before(thumb){
         console.log(thumb.alt)
         var photoChange = thumb.getAttribute("src");
-        var tabin = thumb.getAttribute("tabindex");
+        // var tabin = thumb.setAttribute("tabindex", 0);
         document.querySelector('#image').innerHTML = (thumb.alt)
-        document.querySelector("#image").style.backgroundImage = "url("+photoChange+")";
+        document.querySelector("#image").style.backgroundImage = "url('"+photoChange+"')";
+        // document.querySelector("#image").style.backgroundImage = "url("+tabin+")";
         }
     function After(){
         document.querySelector("#image").innerHTML = ("Hover or tab over/into an image below.")
         document.querySelector("#image").style.backgroundImage = "none";
     }
 
-    // var is_true = true;
-    // if (Before(this)) = is_true){
-    //     document.querySelector("#image").style.display = ('preview');
-    // }
-    // else
-    //
-    //
-    // return is_valid;
     </script>
 </head>
 
@@ -77,38 +70,50 @@
             alt = "Baby Jaleesa bath time"
             src = "images/baby_me_bath.jpg"
             onmouseover = "Before(this)"
-            onmouseleave = "After()">
+            onmouseleave = "After()"
+            onfocus = "Before(this)"
+            onblur = "After()">
 
         <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-        <img class = "preview" tabindex = "1"
+        <img class = "preview" tabindex = "0"
             alt = "Baby Jaleesa at home in Iceland"
             src = "images/baby_me_hallway.jpg"
             onmouseover = "Before(this)"
-            onmouseleave = "After()">
+            onmouseleave = "After()"
+            onfocus = "Before(this)"
+            onblur = "After()">
 
         <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-        <img class = "preview" tabindex = "2"
+        <img class = "preview" tabindex = "0"
             src = "images/baby_me_kitchen.jpg"
             alt = "Baby Jaleesa in Kitchen"
             onmouseover = "Before(this)"
-            onmouseleave = "After()">
+            onmouseleave = "After()"
+            onfocus = "Before(this)"
+            onblur = "After()">
 
-        <img class = "preview" tabindex = "3"
+        <img class = "preview" tabindex = "0"
             src = "images/oldersis_and_I_in_JP.jpg"
             alt = "Young Jaleesa and sister in Japan"
             onmouseover = "Before(this)"
-            onmouseleave = "After()">
+            onmouseleave = "After()"
+            onfocus = "Before(this)"
+            onblur = "After()">
 
-        <img class = "preview" tabindex = "4"
+        <img class = "preview" tabindex = "0"
             src = "images/mom_and_i.jpg"
             alt = "Mom and Jaleesa before prom"
             onmouseover = "Before(this)"
-            onmouseleave = "After()">
+            onmouseleave = "After()"
+            onfocus = "Before(this)"
+            onblur = "After()">
 
-        <img class = "preview" tabindex = "5"
+        <img class = "preview" tabindex = "0"
             src = "images/me_and_sonia.jpg"
             alt = "Jaleesa and Sonia = BFF"
             onmouseover = "Before(this)"
-            onmouseleave = "After()">
+            onmouseleave = "After()"
+            onfocus = "Before(this)"
+            onblur = "After()">
 </body>
 </html>
